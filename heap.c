@@ -26,9 +26,14 @@ void* heap_top(Heap* pq){
 }
 
 
-
 void heap_push(Heap* pq, void* data, int priority){
+  int aux = 0;
 
+  while (pq->heapArray[aux].data != NULL) {
+    aux++;
+  }
+  pq->heapArray[aux].data = data;
+  pq->heapArray[aux].priority = priority;  
 }
 
 
