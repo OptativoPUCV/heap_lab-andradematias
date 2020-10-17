@@ -12,3 +12,9 @@ Sat Oct 17 21:24:07 UTC 2020:
  tests:  1|3
 total_score: 10/70
 41509a5
+Sat Oct 17 21:30:21 UTC 2020: 
+ heap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  1|3
+total_score: 10/70
+adb3d80
