@@ -40,8 +40,8 @@ void heap_push(Heap* pq, void* data, int priority){
       int aux_priority = pq->heapArray[i].priority;
       pq->heapArray[i].data = data;
       pq->heapArray[i].priority = priority;
-      pq->heapArray[2*i+1].data = aux_data;
-      pq->heapArray[2*i+1].priority = aux_priority;
+      pq->heapArray[2*i+2].data = aux_data;
+      pq->heapArray[2*i+2].priority = aux_priority;
       printf("\n%i\n", i);
     
     i = (i-1)/2;
