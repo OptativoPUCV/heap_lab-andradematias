@@ -138,3 +138,9 @@ Sun Oct 18 09:23:23 UTC 2020:
  tests:  4|2
 total_score: 30/70
 a8f44bb
+Sun Oct 18 10:18:16 UTC 2020: 
+ heap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  3|2
+total_score: 25/70
+aceaf0f
