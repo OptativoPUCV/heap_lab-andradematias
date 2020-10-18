@@ -54,3 +54,9 @@ Sun Oct 18 08:56:13 UTC 2020:
  tests:  2|2
 total_score: 20/70
 5c0e307
+Sun Oct 18 08:57:05 UTC 2020: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  2|2
+total_score: 20/70
+b2bd7a0
