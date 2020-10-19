@@ -359,3 +359,9 @@ Mon Oct 19 03:53:31 UTC 2020:
  1 file changed, 13 insertions(+)
  tests:  0|0
 f727a55
+Mon Oct 19 03:53:49 UTC 2020: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 50/70
+54555cd
