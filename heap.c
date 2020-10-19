@@ -72,7 +72,7 @@ void heap_pop(Heap* pq) {
       pq->heapArray[(2*i)+2].data = aux_data;
       pq->heapArray[(2*i)+2].priority = aux_priority;
     }
-    i = 2*i+1;
+    i = 2*i+2;
   }
 }
 
