@@ -77,7 +77,7 @@ void heap_pop(Heap* pq){
       pq->heapArray[2*i+2].priority = aux_priority;      
     }
   }
-  i = i*2+1;
+  i = i*2+2;
 }
 
 Heap* createHeap(){
