@@ -60,16 +60,17 @@ void heap_pop(Heap* pq){
   (pq->size)--;
   int i = 0;
 
-  while (pq->heapArray[i].priority < pq->heapArray[(2*i)+2].priority) {
-    aux_data = pq->heapArray[i].data;
-    aux_priority = pq->heapArray[i].priority;
-    pq->heapArray[i].data = pq->heapArray[(2*i+2)].data;
-    pq->heapArray[i].priority = pq->heapArray[(2*i+2)].priority;
-    pq->heapArray[(2*i+2)].data = aux_data;
-    pq->heapArray[(2*i+2)].priority = aux_priority;
-    i = 2*i+2;
+  while (i != pq->size-1) {
+    if (pq->heapArray[i].priority < pq->heapArray[(2*i)+2].priority) {
+      aux_data = pq->heapArray[i].data;
+      aux_priority = pq->heapArray[i].priority;
+      pq->heapArray[i].data = pq->heapArray[(2*i+2)].data;
+      pq->heapArray[i].priority = pq->heapArray[(2*i+2)].priority;
+      pq->heapArray[(2*i+2)].data = aux_data;
+      pq->heapArray[(2*i+2)].priority = aux_priority;   
+    }
+    i++;
   }
-
 }
 
 Heap* createHeap(){
